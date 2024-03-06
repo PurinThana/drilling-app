@@ -24,8 +24,8 @@ function ScatterChart() {
     } else {
 
         const totalThicknessData = output.resdata.map(entry => entry.total_thickness);
-        const porePressureData = output.resdata.map(entry => entry.pore_pressure);
-        const fracturePressureData = output.resdata.map(entry => entry.fracture_pressure);
+        const porePressureData = output.resdata.map(entry => entry.pore_pressure/0.052);
+        const fracturePressureData = output.resdata.map(entry => entry.fracture_pressure/0.052);
 
 
 
